@@ -13,8 +13,6 @@
  */
 class dbHandler {
 
-    //put your code here
-
     function try_create_table() {
         require '/dbConnector.php';
         $query = 'CREATE TABLE rozetka (`id` INT NOT NULL AUTO_INCREMENT,`word`'

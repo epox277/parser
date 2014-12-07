@@ -25,8 +25,8 @@ class page {
 
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_HEADER, 0);
-            curl_setopt($ch, CURLOPT_ENCODING, "");        // обрабатывает все кодировки
-            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 120); // таймаут соединения
+            curl_setopt($ch, CURLOPT_ENCODING, "");       
+            curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 120); 
             $content = curl_exec($ch);
             $str.=$content;
             $httpresponse = curl_getinfo($ch, CURLINFO_HTTP_CODE);
