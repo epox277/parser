@@ -16,9 +16,6 @@ require_once '/core/csvHandler.php';
 require_once '/core/dbHandler.php';
 
 $word = urlencode(htmlspecialchars(trim($argv[1])));
-if ($argv[1] == 1) {
-    $word = 'фотоаппарат';
-}
 $page = new page;
 $csvout = new csvHandler;
 $db = new dbHandler();
