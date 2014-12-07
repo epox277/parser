@@ -15,7 +15,7 @@ require_once '/core/Page.php';
 require_once '/core/csvHandler.php';
 require_once '/core/dbHandler.php';
 
-$word = urlencode(htmlspecialchars(trim($argv[1])));
+$word = trim($argv[1]);
 $page = new page;
 $csvout = new csvHandler;
 $db = new dbHandler();
